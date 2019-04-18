@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'LCARS';
+  src: url("../fonts/lcars.woff2") format('woff2'),
+    url("../fonts/lcars.woff") format('woff');
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  font-family: LCARS;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px 10px black;
+  border: solid 5px black;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px 10px #9C9CFF;
+  border-radius: 10px;
+  border: solid 5px black;
+}
+
+.container {
+  width: 960px;
+  border: 5px solid #333333;
+  margin: 8px auto 0 auto;
+  box-sizing: border-box;
+}
+
+/* .container {
+  height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+} */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 34px; */
+  height: 4.8vmin;
+  /* background-color: #50504f; */
+  background: linear-gradient(#505050, #424242)
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.9vmin;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 15px 0 15px;
+}
+
+nav a:hover {
+  color: #FF9C00;
+}
+
+.content {
+  max-width: 960px;
+  max-height: 69vh;
+  padding: 25px 25px;
+  background-color: black;
+  color: #FFCC66;
+  text-transform: uppercase;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.floatLeft {
+  float: left;
+  margin: 20px 20px 20px 30px;
+}
+
+.abouthere {
+  margin: 20px 30px 20px 0;
+}
+
+.hometext {
+  padding: 12px 25px 12px 25px;
+  /* font-size: 20px; */
+  font-size: 2.7vmin;
+}
+
+.chaptertext {
+  padding: 12px 25px 12px 25px;
+  text-align: left;
+  font-size: 2.7vmin;
+}
+
+.content a {
+  /* color: white; */
+  text-decoration: none;
+  /* padding: 12px 0 12px 25px; */
+  /* font-size: 20px; */
+}
+
+/* .content a:hover {
+  color: #FF9C00;
+} */
+.computernetwork {
+  /* font-size: 62px; */
+  font-size: 6.2vmin;
+  padding: 0 25px;
+}
+
+.networksub {
+  font-size: 4.8vmin;
+  padding: 0 25px 24px 25px;
+}
+
+.purpleheading {
+  /* font-size: 40px; */
+  font-size: 5vmin;
+  color: #9C9CFF;
+  padding: 15px 0 0 30px;
+  text-align: left;
+}
+
+.purpleheading2 {
+  font-size: 5vmin;
+  color: #9C9CFF;
+  padding: 12px 25px 12px 25px;
+  text-align: left;
+}
+
+.purpleheadingbig {
+  /* font-size: 40px; */
+  font-size: 7vmin;
+  /* color: #CE9CCE; */
+  color: #FF9C00;
+  padding: 15px 0 0 30px;
+  text-align: left;
+}
+
+.charheader {
+  font-size: 4.8vmin;
+  padding: 15px 25px 0 25px;
+}
+
+.character {
+  margin: 15px 10px;
+  cursor: pointer;
+}
+
+/* .row ul {
+  text-align: left;
+  font-size: 2.7vmin;
+  list-style-type: disc;
+} */
+ul {
+  padding: 0 25px 12px 50px;
+  text-align: left;
+  font-size: 2.7vmin;
+  list-style-type: disc;
+}
+
+ul a {
+  color: white;
+}
+
+ul a:hover {
+  color: #FFCC66;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "i i i i i c c c t t t t"
+    "b b b b b b b b b b b b";
+}
+
+.charimage {
+  /* background-color: #9C9CFF; */
+  grid-area: i;
+  text-align: left;
+  margin: 5px auto 15px auto;
+  padding: 0 0 0 30px;
+}
+
+.charfields {
+  /* background-color: #FF9C00; */
+  grid-area: c;
+}
+
+.infofields {
+  /* background-color: #6c6cdd; */
+  grid-area: t;
+}
+
+.bio {
+  /* background-color: #d98d17; */
+  grid-area: b;
+}
+
+.personnelhead {
+  /* font-size: 44px; */
+  font-size: 4.4vmin;
+  color: #FFCC66;
+  text-align: left;
+  padding: 7px 0 0 4px;
+}
+
+.infoid {
+  /* font-size: 28px; */
+  font-size: 3vmin;
+  color: #FF9C00;
+  text-align: left;
+  padding: 7px 0 7px 4px;
+}
+
+.filehead {
+  font-size: 4.4vmin;
+  color: #FFCC66;
+  text-align: right;
+  padding: 7px 30px 0 0;
+}
+
+.infotext {
+  font-size: 3vmin;
+  color: #9C9CFF;
+  text-align: right;
+  padding: 7px 30px 7px 0;
+}
+
+.biohead {
+  font-size: 4.4vmin;
+  color: #FFCC66;
+  text-align: left;
+  padding: 0 0 20px 25px;
+}
+
+.bioheadsub {
+  font-size: 3.6vmin;
+  color: #FF9C00;
+  text-align: left;
+  padding: 0 0 20px 25px;
+}
+
+.biohere {
+  font-size: 3vmin;
+  color: #9C9CFF;
+  text-align: left;
+  padding: 0 0 20px 25px;
+}
+
+button {
+  background-color: #FF9C00;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: LCARS;
+  /* font-size: 24px; */
+  font-size: 3.4vmin;
+  margin: 0 20px 25px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffc569;
+}
+
+button.chptrbtn {
+  margin: 15px 20px 15px 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer {
+  width: 960px;
+  height: 34px;
+  margin: 8px auto 0 auto;
+  background-color: #252525;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.rowhead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #0d0d0d;
+  margin: 15px 20px 0 20px;
+}
+
+.rowhead p {
+  /* font-size: 20px; */
+  font-size: 2.3vmin;
+}
+
+.rowodd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+  margin: 0 20px 0 20px;
+  padding: 10px 0 10px 0;
+}
+
+.rowodd p {
+  font-size: 2.3vmin;
+}
+
+.rowodd a {
+  color: white;
+}
+
+.rowodd a:hover {
+  color: #FFCC66;
+}
+
+.roweven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  margin: 0 20px 0 20px;
+  padding: 10px 0 10px 0;
+}
+
+.roweven p {
+  font-size: 2.3vmin;
+}
+
+.roweven a {
+  color: white;
+}
+
+.roweven a:hover {
+  color: #FFCC66;
+}
+
+.rowend {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 970px) {
+  .container, .nav, .content, footer {
+    width: 100%;
+  }
+
+  .rowhead .rowodd .roweven .rowbio .rowinfo {
+    width: 100%
+  }
+}
