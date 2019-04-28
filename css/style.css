@@ -171,6 +171,14 @@ ul {
   list-style-type: disc;
 }
 
+.chrono {
+  color: #9C9CFF;
+  padding: 0 25px 12px 50px;
+  text-align: left;
+  font-size: 2.7vmin;
+  list-style-type: disc;
+}
+
 ul a {
   color: white;
 }
